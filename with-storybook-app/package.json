@@ -10,7 +10,7 @@
 
     "chromatic": "chromatic --project-token=chpt_363afa22c5d6787",
     "zeplin-connect": "zeplin connect",
-    "zeplin-connect-dev-mode": "zeplin connect --dev"
+    "zeplin-connect-dev-mode": "zeplin connect --dev",
 
     "generate-zeplin-config": "node generate-zeplin-config.js",
     "connect-zeplin": "npm run generate-zeplin-config && zeplin connect"
@@ -36,7 +36,6 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-
     "@zeplin/cli": "^2.0.2",
     "@zeplin/cli-connect-react-plugin": "^1.1.2",
     "@zeplin/cli-connect-storybook-plugin": "^2.0.0",
@@ -45,8 +44,6 @@
     "chromatic": "^11.5.6",
     "storybook-zeplin": "^3.0.0",
     "ts-loader": "^9.5.1",
-
-    "@zeplin/cli-connect-storybook-plugin": "^2.0.0",
     "storybook": "^8.0.9",
 
     "typescript": "^5"
