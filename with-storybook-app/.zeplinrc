@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    {
+      "name": "@zeplin/cli-connect-storybook-plugin",
+      "config": {
+        "url": "http://localhost:6006/iframe.html",
+        "format": "new",
+        "timeout": 120000
+      }
+    }
+  ]
+}
