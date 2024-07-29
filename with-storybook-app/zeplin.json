@@ -8,7 +8,6 @@
 
   ],
   "plugins": [
-    // "zeplin-cli-connect-storybook-plugin"
-    "@zeplin/cli-connect-react-plugin"
+    "zeplin-cli-connect-storybook-plugin"
   ]
 }
