@@ -5,23 +5,26 @@ const config: StorybookConfig = {
     '../stories/**/*.mdx',
     '../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)',
   ],
+
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
+    '@storybook/addon-mdx-gfm',
+    '@chromatic-com/storybook'
   ],
+
   framework: {
     name: '@storybook/nextjs',
     options: {
-      builder: {
-        useSWC: true,
-      },
+      builder: {},
     },
   },
-  docs: {
-    autodocs: 'tag',
-  },
+
+  docs: {},
+
   staticDirs: ['../public'],
+
   webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.(ts|tsx)$/,
@@ -43,6 +46,10 @@ const config: StorybookConfig = {
     config.resolve.extensions.push('.ts', '.tsx');
     return config;
   },
+
+  typescript: {
+    reactDocgen: 'react-docgen-typescript'
+  }
 };
 
 export default config;
