@@ -4,7 +4,7 @@
       "name": "@zeplin/cli-connect-storybook-plugin",
       "config": {
         "url": "http://localhost:6006/iframe.html",
-        "timeout": 300000,
+        "timeout": 900000,
         "format": "new"
       }
     }
